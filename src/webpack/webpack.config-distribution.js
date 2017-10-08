@@ -13,7 +13,6 @@ module.exports = function (env) {
 
   const resources = dpat.Resources.copyDescriptors(buildManifest, PROJECT_ROOT_PATH);
   const bundlePackages = dpat.BuildUtils.bundlePackages(PROJECT_ROOT_PATH, 'devDependencies');
-  const babelOptions = dpat.Babel.resolveOptions(PROJECT_ROOT_PATH, { babelrc: false });
   // the relative path of the assets inside the distribution bundle
   const ASSET_PATH = 'assets';
 
@@ -38,9 +37,8 @@ module.exports = function (env) {
           include: [
             path.resolve(PROJECT_ROOT_PATH, 'src/main/javascript'),
             path.resolve(PROJECT_ROOT_PATH, 'node_modules', '@deskproapps', 'deskproapps-sdk-core'),
-            path.resolve(PROJECT_ROOT_PATH, 'node_modules', '@deskproapps', 'deskproapps-sdk-react')
-          ],
-          options: babelOptions
+            path.resolve(PROJECT_ROOT_PATH, 'node_modules', 'deskpro-sdk-react')
+          ]
         },
         {
           test: /\.css$/,
@@ -82,7 +80,10 @@ module.exports = function (env) {
     plugins: [
       extractCssPlugin,
 
-      new dpat.Webpack.DefinePlugin({ DEBUG: DEBUG }),
+      new dpat.Webpack.DefinePlugin({
+        DEBUG: DEBUG,
+        DPAPP_MANIFEST: JSON.stringify(buildManifest.getContent())
+      }),
 
       // for stable builds, in production we replace the default module index with the module's content hashe
       new dpat.Webpack.HashedModuleIdsPlugin(),
@@ -101,6 +102,10 @@ module.exports = function (env) {
       new dpat.Webpack.ManifestPlugin({ fileName: 'asset-manifest.json' }),
 
       new dpat.Webpack.CopyWebpackPlugin(resources, { debug: true, copyUnmodified: true }),
+  
+      new dpat.Webpack.DefinePlugin({
+        MANIFEST: JSON.stringify(buildManifest.getContent())
+      })
     ],
     resolve: {
       extensions: ['*', '.js', '.jsx', '.scss', '.css'],
