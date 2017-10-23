@@ -1,5 +1,5 @@
 import React from 'react';
-import { createAppFromProps } from '@deskproapps/deskproapps-sdk-core';
+import { createAppFromProps } from '@deskpro/apps-sdk-core';
 import renderer from 'react-test-renderer';
 
 import App from '../../main/javascript/App';
@@ -18,7 +18,7 @@ test('successfully render the application in initial state', done => {
   const instanceProps = {
     appId: '1',
     appTitle: 'My First App',
-    appPackageName: 'app-boilerplate-react',
+    appPackageName: 'apps-boilerplate',
     instanceId: '1'
   };
 

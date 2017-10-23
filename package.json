@@ -1,7 +1,7 @@
 {
-  "name": "@deskproapps/app-boilerplate-react",
+  "name": "@deskpro/apps-boilerplate",
   "version": "0.1.0",
-  "description": "A foundation to get you started developing React DeskPro Apps with the best developer experience",
+  "description": "A foundation to get you started developing DeskPRO Apps with the best developer experience.",
   "main": "lib/main/javascript/index.js",
   "scripts": {
     "dev": "dpat server .",
@@ -10,11 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeskproApps/deskproapps-boilerplate-react.git"
+    "url": "git+https://github.com/deskpro/apps-boilerplate.git"
   },
   "keywords": [
     "deskpro",
-    "react-boilerplate"
+    "react",
+    "boilerplate"
   ],
   "author": {
     "name": "DeskPRO Apps",
@@ -23,9 +24,9 @@
   },
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/Deskpro/deskproapps-boilerplate-react/issues"
+    "url": "https://github.com/deskpro/apps-boilerplate/issues"
   },
-  "homepage": "https://github.com/Deskpro/deskproapps-boilerplate-react#readme",
+  "homepage": "https://github.com/deskpro/apps-boilerplate#readme",
   "deskpro": {
     "version": "2.1.0",
     "title": "Your app title",
@@ -42,12 +43,8 @@
     "externalApis": []
   },
   "dependencies": {
-    "deskpro-sdk-react": "^0.0.1",
-    "deskpro-components": "^1.0.0",
-    "react-redux": "^5.0.6",
-    "redux": "^3.7.2",
-    "redux-form": "^7.1.0",
-    "redux-thunk": "^2.2.0"
+    "@deskpro/apps-sdk-react": "^0.0.2",
+    "@deskpro/react-components": "^1.0.0"
   },
   "devDependencies": {
     "file-loader": "^0.11.2",

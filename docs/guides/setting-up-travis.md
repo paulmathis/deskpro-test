@@ -17,7 +17,7 @@ language: node_js
 node_js:
   - '6'
 install:
-  - npm install && npm install @deskproapps/dpat
+  - npm install && npm install @deskpro/apps-dpat
 script:
   - npm run test && npm run package
  ```
@@ -34,7 +34,7 @@ language: node_js
 node_js:
    - '6'
 install:
-   - npm install && npm install @deskproapps/dpat
+   - npm install && npm install @deskpro/apps-dpat
 script:
    - npm run test && npm run package
 deploy:

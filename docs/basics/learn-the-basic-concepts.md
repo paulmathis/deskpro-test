@@ -95,4 +95,4 @@ The application entrypoint represents the bridge between DeskPRO Apps SDK and yo
 The application object gives you access to the DeskPRO Apps Application API and it is made available at runtime as the only
 parameter of your Application Entrypoint.
 
-To find out more about the Application Object, you can visit its definition in the [Deskpro Apps Core SDK](https://github.com/deskpro/deskproapps-sdk-core/blob/master/src/main/javascript/Core/App.js) repository
+To find out more about the Application Object, you can visit its definition in the [Deskpro Apps Core SDK](https://github.com/deskpro/apps-sdk-core/blob/master/src/main/javascript/Core/App.js) repository
