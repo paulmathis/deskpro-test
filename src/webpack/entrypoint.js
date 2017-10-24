@@ -1,4 +1,4 @@
-import { createApp } from '@deskproapps/deskproapps-sdk-core';
+import { createApp } from '@deskpro/apps-sdk-core';
 import { createToolbar } from '@deskpro/apps-sdk-react';
 import '../main/sass/index.scss';
 

@@ -7,25 +7,25 @@ Four items are required in order to get started developing applications:
 1. Access to the latest version of [DeskPRO](https://www.deskpro.com/). The minimum version is XXX-YYY. You can use an existing installation if it was updated
 or you can go to the [downloads]((https://support.deskpro.com/en/downloads)) page and pick your distribution.
 2. A recent version of nodejs and npm running on your machine. We recommend nodejs 6 and npm 3.10
-3. A clone of [Deskpro Apps Boilerplate repository](https://github.com/deskpro/deskproapps-boilerplate-react)
-4. The [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat) present on your machine. This is the official build tool for DeskPRO Apps and you will need it at least for packaging your application in the format required for installation.
+3. A clone of [Deskpro Apps Boilerplate repository](https://github.com/deskpro/apps-boilerplate)
+4. The [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat) present on your machine. This is the official build tool for DeskPRO Apps and you will need it at least for packaging your application in the format required for installation.
 
 Assuming you have already solved the first two requirements, the next step is to clone the boilerplate repository in your project repository:
    
     cd <PROJECT_DIR>
-    git clone https://github.com/deskpro/deskproapps-boilerplate-react.git   
+    git clone https://github.com/deskpro/apps-boilerplate.git   
 
 After git has finished cloning, install the project's dependencies. Run the following command:  
 
-    npm install && npm install --save @deskproapps/deskproapps-sdk-react
+    npm install && npm install --save @deskpro/apps-sdk-react
 
-The final step is to install [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat), which is the main tool to build and package apps:
+The final step is to install [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat), which is the main tool to build and package apps:
 
-    npm install -g @deskproapps/dpat
+    npm install -g @deskpro/apps-dpat
     
-We recommend to have [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat) (also known as **dpat** on the command line) globally available, but if for some reason you can not, then install all the dependencies locally with this command:
+We recommend to have [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat) (also known as **dpat** on the command line) globally available, but if for some reason you can not, then install all the dependencies locally with this command:
 
-    npm install @deskproapps/dpat
+    npm install @deskpro/apps-dpat
 
 You are now ready to run your first app !
 

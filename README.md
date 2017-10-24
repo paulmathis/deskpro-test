@@ -1,5 +1,4 @@
-# app-boilerplate-react
-
+# apps-boilerplate
 A foundation to get you started developing React DeskPro Apps with the best developer experience
 
 ## Contents
@@ -7,24 +6,24 @@ A foundation to get you started developing React DeskPro Apps with the best deve
 - [Development](#development)
 - [Packaging](#packaging)
 - [Running tests](#running-tests)
-- [Online guides and documentation](https://deskpro.github.io/deskproapps-boilerplate-react)
+- [Online guides and documentation](https://deskpro.gitbooks.io/deskpro-apps/)
 
 
 ## Installation
     
-This project requires [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat) to be installed alongside the other dependencies. You can install [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat) either locally or globally. We recommend to install it globally so you have it always available, regardless of how many apps you develop.
+This project requires [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat) to be installed alongside the other dependencies. You can install [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat) either locally or globally. We recommend to install it globally so you have it always available, regardless of how many apps you develop.
     
-To install the dependencies and [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat) locally, run:
+To install the dependencies and [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat) locally, run:
     
-    npm install && npm install --save @deskproapps/deskproapps-sdk-react && npm install @deskproapps/dpat   
+    npm install && npm install --save @deskpro/apps-sdk-react && npm install @deskpro/apps-dpat   
 
-If you already have [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat) installed, run:
+If you already have [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat) installed, run:
  
-    npm install && npm install --save @deskproapps/deskproapps-sdk-react
+    npm install && npm install --save @deskpro/apps-sdk-react
 
 ## Development
              
-The best way to develop is to use the specially built development server, made available by [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat). To start the server, from your project folder, run:    
+The best way to develop is to use the specially built development server, made available by [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat). To start the server, from your project folder, run:    
     
     npm run dev
  

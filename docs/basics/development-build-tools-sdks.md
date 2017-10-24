@@ -15,10 +15,10 @@ We recommend using [React](https://facebook.github.io/react/) for your apps and 
 
 Other technologies we use are [Webpack](https://webpack.js.org/) for bundling, [Babel](https://babeljs.io/) for compiling and [Jest](https://facebook.github.io/jest/) for testing.
 
-We have conveniently incorporated Webpack, Babel and Jest into our build tool, [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat) so there's no setup required and you can focus on building the application
+We have conveniently incorporated Webpack, Babel and Jest into our build tool, [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat) so there's no setup required and you can focus on building the application
 using the best of the latest technology.
 
-We have also bundled a development server with [Deskpro Apps Tool](https://github.com/deskpro/deskproapps-dpat). If you have cloned the [Deskpro Apps Boilerplate](https://github.com/deskpro/deskproapps-boilerplate-react),
+We have also bundled a development server with [Deskpro Apps Tool](https://github.com/deskpro/apps-dpat). If you have cloned the [Deskpro Apps Boilerplate](https://github.com/deskpro/deskproapps-boilerplate-react),
 you can start it with the following command:
 
     npm run dev
@@ -258,7 +258,7 @@ The application entrypoint is a special function named `runApp` that every appli
  is in `src/main/javascript/index.js` file.
 
 When the entrypoint is called the iframe which hosts your application is fully loaded, and `runApp` will receive a single parameter called `app` which is an object that represents the main way of accessing the DeskPRO Apps functionality. 
-Technically the `app` parameter is an instance of [Core/App](https://github.com/deskpro/deskproapps-sdk-core/blob/master/src/main/javascript/Core/App.js), and is a facade or light-wrapper around the functionality offered by the various components of the DeskPRO Apps SDK.
+Technically the `app` parameter is an instance of [Core/App](https://github.com/deskpro/apps-sdk-core/blob/master/src/main/javascript/Core/App.js), and is a facade or light-wrapper around the functionality offered by the various components of the DeskPRO Apps SDK.
 
 The SDK does not require a return value from the entrypoint, and for a React application, the entry-point should just render the application. Here is an example:
 
@@ -281,7 +281,7 @@ One of the most useful components is the `DeskproAppContainer`, which has the pu
   
 ```javascript
 import ReactDOM from 'react-dom';
-import { DeskproAppContainer } from '@deskproapps/deskproapps-sdk-react';
+import { DeskproAppContainer } from '@deskpro/apps-sdk-react';
 import App from './App';
 
 export function runApp(app) {
@@ -297,9 +297,9 @@ We recommend you always use the `DeskproAppContainer` if your application needs 
 
 ## DeskPRO Apps Tool
 
-The [DeskPRO Apps Tool]((https://github.com/deskpro/deskproapps-dpat)), commonly referred to as  `dpat` is the build tool we have created to simplify most of the tasks of developing an app.
+The [DeskPRO Apps Tool]((https://github.com/deskpro/apps-dpat)), commonly referred to as  `dpat` is the build tool we have created to simplify most of the tasks of developing an app.
 
-It is used for validating an application manifest, compiling, packaging and testing an application, for deploying and running the local development server. In the [Deskpro Apps Boilerplate](https://github.com/deskpro/deskproapps-boilerplate-react) project
+It is used for validating an application manifest, compiling, packaging and testing an application, for deploying and running the local development server. In the [Deskpro Apps Boilerplate](https://github.com/deskpro/apps-boilerplate) project
 you will mostly interact with it via the two npm commands `npm run dev` and `npm run package` when you start the development server and when you are ready to package your application.
 
 
