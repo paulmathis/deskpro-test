@@ -43,8 +43,8 @@
     "externalApis": []
   },
   "dependencies": {
-    "@deskpro/apps-sdk-react": "^0.0.2",
-    "@deskpro/react-components": "^1.0.0"
+    "@deskpro/apps-sdk-react": "^0.0.5",
+    "@deskpro/react-components": "^1.1.0"
   },
   "devDependencies": {
     "file-loader": "^0.11.2",
