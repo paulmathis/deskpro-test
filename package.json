@@ -1,6 +1,6 @@
 {
   "name": "@deskpro/apps-boilerplate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A foundation to get you started developing DeskPRO Apps with the best developer experience.",
   "main": "lib/main/javascript/index.js",
   "scripts": {
