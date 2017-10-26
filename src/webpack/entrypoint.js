@@ -1,5 +1,4 @@
-import { createApp } from '@deskpro/apps-sdk-core';
-import { createToolbar } from '@deskpro/apps-sdk-react';
+import { createApp, createToolbar } from '@deskpro/apps-sdk-react';
 import '../main/sass/index.scss';
 
 /**
@@ -7,7 +6,7 @@ import '../main/sass/index.scss';
  *
  * @param {*} dpapp
  */
-createApp((dpapp) => {
+createApp(function(dpapp) {
   // DPAPP_MANIFEST is exported by webpack.
   dpapp.manifest = DPAPP_MANIFEST;
   
