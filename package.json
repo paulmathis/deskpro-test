@@ -43,13 +43,14 @@
     "externalApis": []
   },
   "dependencies": {
-    "@deskpro/apps-sdk-react": "^0.1.0",
-    "@deskpro/react-components": "^1.1.0"
+    "@deskpro/apps-sdk-react": "^0.1.2",
+    "@deskpro/react-components": "^1.1.1"
   },
   "devDependencies": {
     "@deskpro/apps-dpat": "^0.9.1",
     "@deskpro/apps-sdk-core": "^1.0.0-beta.22",
     "file-loader": "^0.11.2",
+    "prop-types": "^15.6.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1",
