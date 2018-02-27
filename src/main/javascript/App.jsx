@@ -1,37 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
+import { Container, Avatar } from '@deskpro/react-components';
 
-/**
- * Renders a Deskpro app.
- */
-export default class App extends React.PureComponent {
-  static propTypes = {
-    /**
-     * Instance of sdk storage.
-     * @see https://deskpro.gitbooks.io/deskpro-apps/content/api/props/storage.html
-     */
-    storage: PropTypes.object,
-    /**
-     * Instance of sdk oauth.
-     * @see https://deskpro.gitbooks.io/deskpro-apps/content/api/props/oauth.html
-     */
-    oauth:   PropTypes.object,
-    /**
-     * Instance of sdk route.
-     * @see https://deskpro.gitbooks.io/deskpro-apps/content/api/props/route.html
-     */
-    route:   PropTypes.object,
-    /**
-     * Instance of sdk ui.
-     * @see https://deskpro.gitbooks.io/deskpro-apps/content/api/props/ui.html
-     */
-    ui:      PropTypes.object
-  };
-
+export default class App extends React.Component {
   render() {
+    const { tabData } = this.props;
+
     return (
-      <div>Hello world</div>
+      <Container>
+        <ul className="participants-list">
+          {tabData.participants.map((p) => (
+            <li key={p.person.id}>
+              <Avatar src={p.person.default_picture_url} />
+              <div>
+                {p.person.name}
+              </div>
+              <div>
+                {p.person.primary_email.email}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </Container>
     );
   }
 }
